@@ -12,6 +12,11 @@ const diceRoll = () => {
     console.log(`You rolled ${randomHigh}`)
     
 }
+const scoreAddition = ()=>{
+    diceRoll()
+    pointScored += randomHigh
+    console.log(`The total score is ${pointScored}`)
+}
 
 const winOrLose = ()=>{
     // randomHigh = 2
@@ -27,18 +32,10 @@ const winOrLose = ()=>{
         console.log('Lucky')
     }
 }
-const scoreAddition = ()=>{
-    diceRoll()
-    pointScored += randomHigh
-    console.log(`The total score is ${pointScored}`)
-}
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-//pointScored += randomHigh
 
-// diceRoll();
-// winOrLose();
+winOrLose()
+winOrLose()
+winOrLose()
+winOrLose()
+winOrLose()
+winOrLose()
