@@ -11,6 +11,24 @@ body{
 img{
     justify-content: center;
 }
+img{
+    position: absolute;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    align-items: center;
+}
+p{
+    margin: 0;
+    font-size: 4vh;
+    align-items: flex-end;
+}
+/*#paragraph{
+    position: relative;
+}*/
 /* head img .dice{
     display: none;
 } */

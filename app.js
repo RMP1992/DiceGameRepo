@@ -4,24 +4,48 @@
 
 // let randonHigh = Math.ceil(Math.random()* 6)
 // let randonLow = Math.floor(Math.random()* 6)
+const button = document.getElementById('myBtn');
+const message = document.getElementById('paragraph');
+const message2 = document.getElementById('paradiv');
+
+
 let randomHigh;
 let pointScored = 0;
 
-const diceRoll = () => {
+button.addEventListener('click', ()=>{
     randomHigh = Math.ceil(Math.random()* 6)
-    console.log(`You rolled ${randomHigh}`)
-    
-}
-const scoreAddition = ()=>{
-    diceRoll()
+    message2.innerHTML = `<p>You rolled ${randomHigh}</p>`
     pointScored += randomHigh
-    console.log(`The total score is ${pointScored}`)
-}
+    message2.innerHTML = `<p>The total score is ${pointScored}</p>`
+    if(randomHigh == 1){
+        message.innerHTML = `<p>RIP</p>`
+        pointScored = 0;
+    }else if(pointScored >= 20){
+        message.innerHTML = `<p>You win</p>`
+        pointScored = 0;
+    }else{
+        message.innerHTML = `<p>Lucky</p>`
+    }
+    
+});
+
+
+
+// const diceRoll = () => {
+//     randomHigh = Math.ceil(Math.random()* 6)
+//     alert(`You rolled ${randomHigh}`)
+// }
+
+// const scoreAddition = ()=>{
+    
+//     pointScored += randomHigh
+//     console.log(`The total score is ${pointScored}`)
+// }
 
 const winOrLose = ()=>{
     // randomHigh = 2
     // pointScored = 21
-    scoreAddition()
+    // scoreAddition()
     if(randomHigh == 1){
         console.log('RIP')
         pointScored = 0;
@@ -32,6 +56,7 @@ const winOrLose = ()=>{
         console.log('Lucky')
     }
 }
+
 
 winOrLose()
 winOrLose()
