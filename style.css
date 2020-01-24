@@ -8,6 +8,27 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,18,36,1) 35%, rgba(0,212,255,1) 100%);
     font-family: 'Bangers', cursive;
 }
+img{
+    justify-content: center;
+}
+/* head img .dice{
+    display: none;
+} */
+#dice2{
+    display: none;
+}
+#dice3{
+    display: none;
+}
+#dice4{
+    display: none;
+}
+#dice5{
+    display: none;
+}
+#dice6{
+    display: none;
+}
 #button{
     font-family: 'Bangers', cursive;
     display: flex;
@@ -39,6 +60,12 @@ a:before{
     width: 50%;
     background: rgba(255, 255, 255, 0.05);
 }  
+a:hover{
+    background-color: rgb(16, 170, 200);
+    box-shadow: 20px 20px 50px 15px black;
+    color: rgba(158,18,36,1);
+    
+}
 #button{
     position: absolute;
     top: 0;
@@ -123,53 +150,3 @@ a span:nth-child(4){
 }
 }
     
-/* a:hover{
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0px 0px 10px #2196f3, 0px 0px 40px #2196f3, 0px 0px 80px #2196f3;
-    transition-delay: 0.5s;
-} */
-/* a span{
-    position: relative;
-    display: block;
-
-} */
-
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bangers', cursive;;
-}
-body{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,18,36,1) 35%, rgba(0,212,255,1) 100%)
-}
-#divButton{
-    display: flex;
-    justify-content: center;
-    margin-top:80vh;
-}
-#button{
-    background-color: rgb(39, 14, 121);
-    color:#ffffff;
-    padding: 2vh;
-    font-size: 2.5vh;
-    background: linear-gradient(to right, #0c002b, #1779ff);
-    box-shadow: 0 20px 50px black;
-    text-shadow: 5px 8px black;
-
-}
-#button:hover{
-    background: linear-gradient(to left, #0c002b, #990000);
-} */
-
-
-
-
-
-    
-  
-    
-    
-
