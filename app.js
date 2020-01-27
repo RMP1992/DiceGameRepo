@@ -6,7 +6,8 @@
 // let randonLow = Math.floor(Math.random()* 6)
 const button = document.getElementById('myBtn');
 const message = document.getElementById('paragraph');
-const message2 = document.getElementById('paradiv');
+const message2 = document.getElementById('divparagraph')
+const message3 = document.getElementById('paradiv');
 
 
 let randomHigh;
@@ -16,11 +17,11 @@ button.addEventListener('click', ()=>{
     randomHigh = Math.ceil(Math.random()* 6)
     message2.innerHTML = `<p>You rolled ${randomHigh}</p>`
     pointScored += randomHigh
-    message2.innerHTML = `<p>The total score is ${pointScored}</p>`
+    message3.innerHTML = `<p>The total score is ${pointScored}</p>`
     if(randomHigh == 1){
-        message.innerHTML = `<p>RIP</p>`
+        message.innerHTML = `<p>Better luck next time</p>`
         pointScored = 0;
-    }else if(pointScored >= 20){
+    }else if(pointScored >= 21){
         message.innerHTML = `<p>You win</p>`
         pointScored = 0;
     }else{
