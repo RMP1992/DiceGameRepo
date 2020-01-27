@@ -8,13 +8,18 @@ const button = document.getElementById('myBtn');
 const message = document.getElementById('paragraph');
 const message2 = document.getElementById('divparagraph')
 const message3 = document.getElementById('paradiv');
+const img = document.getElementById('dice1')
 
 
 let randomHigh;
 let pointScored = 0;
 
 button.addEventListener('click', ()=>{
-    randomHigh = Math.ceil(Math.random()* 6)
+    randomHigh = Math.ceil(Math.random()* 6);
+    img.src = `img/dice${randomHigh}.png`
+
+    
+
     message2.innerHTML = `<p>You rolled ${randomHigh}</p>`
     pointScored += randomHigh
     message3.innerHTML = `<p>The total score is ${pointScored}</p>`
