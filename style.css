@@ -7,50 +7,53 @@ body{
     min-height: 100vh;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,18,36,1) 35%, rgba(0,212,255,1) 100%);
     font-family: 'Bangers', cursive;
+    position: relative;
 }
-img{
-    justify-content: center;
+.mainContainer{
+    flex-direction: column;
+    
 }
 
-.container{
+    
+
+.diceContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     position: relative;
     vertical-align: top;
     
 }
+.dice{
+    margin: 10vh
+}
+.btnContainer{
+    position: absolute;
+    left: 50%;
+    /* display: flex;
+    justify-content: center; */
+}
+.text{
+    display: flex;
+    
+}
+div{
+    justify-content: space-evenly;
+}
+
 p{
-    margin:0;
+    margin:5vh;
     font-size: 4vh;
-    text-align: center;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
     
     
 }
-/*#paragraph{
-    position: relative;
-}*/
-/* head img .dice{
-    display: none;
-} */
-/* #dice2{
-    display: none;
-}
-#dice3{
-    display: none;
-}
-#dice4{
-    display: none;
-}
-#dice5{
-    display: none;
-}
-#dice6{
-    display: none;
-} */
+
 #button{
     font-family: 'Bangers', cursive;
-    display: flex;
+    align-items: center;
     background: none;
     font-size: 50px;
     color: #1276a5;
@@ -59,17 +62,21 @@ p{
 }
 a{
     position: absolute;
-    top: 80vh;
-    left: 50%;
+    top: 40vh;
+    align-content: center;
     transform: translate(-50%, -50%);
     color: #1670f0;
-    padding: 30px 60px;
+    padding:0;
     font-size: 3vh;
     letter-spacing: 4px;
     text-decoration: none;
     box-shadow: 0 20px 50px rgba(0,0,0, 0.5);
     overflow: hidden;
+    
+    
+
 }  
+
 a:before{
     content: "";
     position: relative;
