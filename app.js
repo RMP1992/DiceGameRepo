@@ -5,10 +5,30 @@
 // let randonHigh = Math.ceil(Math.random()* 6)
 // let randonLow = Math.floor(Math.random()* 6)
 const button = document.getElementById('myBtn');
-const message = document.getElementById('paragraph');
-const message2 = document.getElementById('divparagraph')
-const message3 = document.getElementById('paradiv');
+const submit = document.getElementById('button')
+const player1Message = document.getElementById('paragraph');
+const Player1Message2 = document.getElementById('divparagraph')
+const player1Message3 = document.getElementById('paradiv');
 const img = document.getElementById('dice1')
+const player2Message = document.getElementById('paragraph2');
+const Player2Message2 = document.getElementById('divparagraph2')
+const player2Message3 = document.getElementById('paradiv2');
+
+let player1 = true
+
+button.addEventListener('click', () =>{
+
+   
+        if (randomHigh == 1) {
+        player1 == false
+        button.innerHTML = `<p>Player 2</p>`
+        console.log('this code is running')
+        }else {
+        player1 == true 
+        button.innerHTML = `<p>Player 1</p>`
+        console.log('this code is also running')
+        }
+})
 
 
 let randomHigh;
@@ -20,17 +40,17 @@ button.addEventListener('click', ()=>{
 
     
 
-    message2.innerHTML = `<p>You rolled ${randomHigh}</p>`
+    Player1Message2.innerHTML = `<p>You rolled ${randomHigh}</p>`
     pointScored += randomHigh
-    message3.innerHTML = `<p>The total score is ${pointScored}</p>`
+    player1Message3.innerHTML = `<p>The total score is ${pointScored}</p>`
     if(randomHigh == 1){
-        message.innerHTML = `<p>Better luck next time</p>`
+        player1Message.innerHTML = `<p>Better luck next time</p>`
         pointScored = 0;
     }else if(pointScored >= 21){
-        message.innerHTML = `<p>You win</p>`
+        player1Message.innerHTML = `<p>You win</p>`
         pointScored = 0;
     }else{
-        message.innerHTML = `<p>Lucky</p>`
+        player1Message.innerHTML = `<p>Lucky</p>`
     }
     
 });
@@ -48,26 +68,26 @@ button.addEventListener('click', ()=>{
 //     console.log(`The total score is ${pointScored}`)
 // }
 
-const winOrLose = ()=>{
-    // randomHigh = 2
-    // pointScored = 21
-    // scoreAddition()
-    if(randomHigh == 1){
-        console.log('RIP')
-        pointScored = 0;
-    }else if(pointScored >= 20){
-        console.log('You win')
-        pointScored = 0;
-    }else{
-        console.log('Lucky')
-    }
-}
+// const winOrLose = ()=>{
+//     // randomHigh = 2
+//     // pointScored = 21
+//     // scoreAddition()
+//     if(randomHigh == 1){
+//         console.log('RIP')
+//         pointScored = 0;
+//     }else if(pointScored >= 20){
+//         console.log('You win')
+//         pointScored = 0;
+//     }else{
+//         console.log('Lucky')
+//     }
+// }
 
 
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
-winOrLose()
+// winOrLose()
+// winOrLose()
+// winOrLose()
+// winOrLose()
+// winOrLose()
+// winOrLose()
+// winOrLose()
