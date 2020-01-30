@@ -25,13 +25,11 @@ body{
     
 }
 .dice{
-    margin: 10vh
+    margin: 5vh;
 }
-.btnContainer{
+#myBtn{
     position: absolute;
     left: 50%;
-    /* display: flex;
-    justify-content: center; */
 }
 .text{
     display: flex;
@@ -41,8 +39,9 @@ div{
     justify-content: space-evenly;
 }
 
+
 p{
-    margin:5vh;
+    margin:6vh;
     font-size: 4vh;
     flex-direction: row;
     
@@ -51,16 +50,8 @@ p{
     
 }
 
+
 #button{
-    font-family: 'Bangers', cursive;
-    align-items: center;
-    background: none;
-    font-size: 50px;
-    color: #1276a5;
-    border: none;
-    padding: 0;
-}
-a{
     position: absolute;
     top: 40vh;
     align-content: center;
@@ -71,13 +62,28 @@ a{
     letter-spacing: 4px;
     text-decoration: none;
     box-shadow: 0 20px 50px rgba(0,0,0, 0.5);
-    overflow: hidden;
-    
-    
+    width: 220px;
+    justify-content: center;
+    font-family: 'Bangers', cursive;
+    align-items: center;
+    background: none;
+    font-size: 50px;
+    color: #1276a5;
+    border: none;
+    padding: 0;
 
 }  
+a #myBtn{
+    display: flex;
+}
+/* img .dice{
+    margin:0px;
+}
+img #dice2 .dice{
+    margin: 0px;
+} */
 
-a:before{
+/* a:before{
     content: "";
     position: relative;
     top: 2px;
@@ -85,7 +91,7 @@ a:before{
     bottom: 2px;
     width: 50%;
     background: rgba(255, 255, 255, 0.05);
-}  
+}   */
 a:hover{
     background-color: rgb(16, 170, 200);
     box-shadow: 20px 20px 50px 15px black;
@@ -93,6 +99,9 @@ a:hover{
     
 }
 #button{
+    align-content: center;
+}
+/* #button{
     position: absolute;
     top: 0;
     left: 0;
@@ -101,8 +110,8 @@ a:hover{
     background: linear-gradient(to right, #0c002b, #1779ff);
     animation: animate1 1.5s linear infinite;
     animation-delay: 1s;
-}
-@keyframes animate1{
+} */
+/* @keyframes animate1{
     0%
 
 {
@@ -175,4 +184,23 @@ a span:nth-child(4){
     transform: translateY(-100%);
 }
 }
-    
+a span:nth-child(5){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animate5 1.5s linear infinite;
+}
+@keyframes animate5{
+    0%
+
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+} */
